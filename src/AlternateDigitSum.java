@@ -8,6 +8,7 @@ public class AlternateDigitSum {
                 k+=Integer.valueOf(s.charAt(i)+"");
 
             }else{
+
                 k+=(-Integer.valueOf(s.charAt(i)+""));
             }
         }
