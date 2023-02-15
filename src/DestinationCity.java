@@ -1,6 +1,7 @@
 import java.util.*;
 
 class DestinationCity {
+
     public String destCity(List<List<String>> paths) {
         String start = paths.get(0).get(0);
         Map<String, Integer> map = new HashMap<>();
