@@ -2,7 +2,7 @@ public class AvgValueDivisibleBy3 {
 
 
     public static void main(String[] args) {
-        int[] i = {1, 2, 4, 7, 10};
+        int[] i = {0};
         System.out.println(averageValue(i));
     }
 
