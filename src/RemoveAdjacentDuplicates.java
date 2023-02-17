@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 public class RemoveAdjacentDuplicates {
     public static String removeDuplicates(String s) {
         Stack<Character> stack=new Stack<>();
