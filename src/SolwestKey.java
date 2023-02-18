@@ -1,5 +1,6 @@
 public class SolwestKey {
-    public char slowestKey(int[] releaseTimes, String keysPressed) {
+
+    public static char slowestKey(int[] releaseTimes, String keysPressed) {
         int index = 0;
         int great = releaseTimes[0];
         for (int i = 1; i < releaseTimes.length; i++) {
@@ -14,5 +15,9 @@ public class SolwestKey {
             }
         }
         return keysPressed.charAt(index);
+    }
+
+    public static void main(String[] args) {
+       // slowestKey();
     }
 }
