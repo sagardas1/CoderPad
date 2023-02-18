@@ -45,6 +45,6 @@ public class FancyString {
     }
 
     public static void main(String[] args) {
-        System.out.println(makeFancyString("leeetcode"));
+        System.out.println(makeFancyString("aaabaaaa"));
     }
 }
