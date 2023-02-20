@@ -10,6 +10,6 @@ public class DivideCircle {
     }
 
     public static void main(String[] args) {
-        numberOfCuts(10);
+        System.out.println(numberOfCuts(10));
     }
 }
