@@ -17,7 +17,7 @@ public class DecodeMessage {
                 c += 1;
             }
         }
-        System.out.println(map);
+
 
 
         String w = "";
