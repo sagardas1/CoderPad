@@ -20,6 +20,7 @@ public class DecodeMessage {
 
 
 
+
         String w = "";
         for (char j : message.toCharArray()) {
             if (j != ' ')
