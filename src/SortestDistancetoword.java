@@ -27,6 +27,7 @@ public class SortestDistancetoword {
                 count2 += 1;
             }
         }
+
         if (count1 <= count2) {
             return count1;
         } else return count2;
