@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class StringAllMostEqual {
     public static boolean checkAlmostEquivalent(String word1, String word2) {
         int num=0;
