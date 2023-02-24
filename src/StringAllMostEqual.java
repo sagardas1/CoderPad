@@ -19,7 +19,7 @@ public class StringAllMostEqual {
                 map2.put(c, map2.get(c) + 1);
             } else {
                 map2.put(c, 1);
-            }ß
+            }
         }
 
         for (Map.Entry<Character, Integer> entry : map1.entrySet()) {
