@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="711a3349-f56f-4cd5-8c0a-934cfe6db5b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/MaxLenSubArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StringAllMostEqual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringAllMostEqual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,14 +36,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.RomanToInteger">
-    <configuration name="AvgValueDivisibleBy3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AvgValueDivisibleBy3" />
-      <module name="CoderPad" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.MaxLenSubArray">
     <configuration name="FancyString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FancyString" />
       <module name="CoderPad" />
@@ -51,6 +46,13 @@
     </configuration>
     <configuration name="GreatestEnglishLetter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GreatestEnglishLetter" />
+      <module name="CoderPad" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxLenSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MaxLenSubArray" />
       <module name="CoderPad" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -72,11 +74,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MaxLenSubArray" />
         <item itemvalue="Application.RomanToInteger" />
         <item itemvalue="Application.GreatestEnglishLetter" />
         <item itemvalue="Application.ValidPalindrom" />
         <item itemvalue="Application.FancyString" />
-        <item itemvalue="Application.AvgValueDivisibleBy3" />
       </list>
     </recent_temporary>
   </component>
@@ -149,6 +151,16 @@
           <url>file://$PROJECT_DIR$/src/RomanToInteger.java</url>
           <line>21</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MaxLenSubArray.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MaxLenSubArray.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/GreatestEnglishLetter.java</url>

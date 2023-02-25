@@ -1,6 +1,26 @@
 import java.util.*;
 
 public class StringAllMostEqual {
+
+    public int maximumProduct(int[] nums) {
+        if(nums.length>=3){
+            Arrays.sort(nums);
+if(nums[0]<0 && nums[1]<0){
+    if(nums[0]*nums[1]*nums[nums.length-1]>nums[nums.length-1]*nums[nums.length-2]*nums[nums.length-3]){
+        return nums[0]*nums[1]*nums[nums.length-1];
+    }else{
+        return nums[nums.length-1]*nums[nums.length-2]*nums[nums.length-3];
+    }
+}
+            if(nums[0]*nums[1]*nums[2]>nums[nums.length-1]*nums[nums.length-2]*nums[nums.length-3]){
+                return nums[0]*nums[1]*nums[2];
+            }else{
+                return nums[nums.length-1]*nums[nums.length-2]*nums[nums.length-3];
+            }
+        }
+return 0;
+
+    }
     public static boolean checkAlmostEquivalent(String word1, String word2) {
         int num = 0;
 
