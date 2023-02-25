@@ -16,6 +16,7 @@ public class MaxLenSubArray {
             }
             if (num > sum) {
                 sum = num;
+
             }
         }
         return sum;
