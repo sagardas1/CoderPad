@@ -1,6 +1,6 @@
 public class CircularString {
     public static void main(String[] args) {
-        isCircularSentence("");
+        System.out.println( isCircularSentence(""));
     }
 
     public static boolean isCircularSentence(String sentence) {
