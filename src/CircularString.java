@@ -1,9 +1,9 @@
 public class CircularString {
     public static void main(String[] args) {
-
+        isCircularSentence("");
     }
 
-    public boolean isCircularSentence(String sentence) {
+    public static boolean isCircularSentence(String sentence) {
         String arr[] = sentence.split(" ");
         if (arr[0].charAt(0) == arr[arr.length - 1].charAt((arr[arr.length - 1]).length() - 1)) {
 
