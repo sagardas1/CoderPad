@@ -1,5 +1,7 @@
+import java.util.*;
+
 public class KeepMultiplying {
-    class Solution {
+
         public int findFinalValue(int[] nums, int original) {
             List<Integer> list=new ArrayList<>();
             int k=original;
