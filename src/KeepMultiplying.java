@@ -18,6 +18,7 @@ public class KeepMultiplying {
     }
 
 
+
     public int countGoodTriplets(int[] arr, int a, int b, int c) {
         int count = 0;
 
