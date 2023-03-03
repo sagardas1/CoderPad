@@ -33,6 +33,7 @@ public class KeepMultiplying {
 
             }
         }
+
         return count;
     }
 }
