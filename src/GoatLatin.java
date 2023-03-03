@@ -23,6 +23,9 @@ public class GoatLatin {
                 }
                 k+=v+" ";
 
+
+
+
             }
         }
         return k.trim();
