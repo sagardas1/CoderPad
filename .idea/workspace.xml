@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="711a3349-f56f-4cd5-8c0a-934cfe6db5b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/BalanceString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SortestDistancetoword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SortestDistancetoword.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +35,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MaxLenSubArray">
-    <configuration name="FancyString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FancyString" />
+  <component name="RunManager" selected="Application.BalanceString">
+    <configuration name="BalanceString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BalanceString" />
       <module name="CoderPad" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -73,11 +73,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BalanceString" />
         <item itemvalue="Application.MaxLenSubArray" />
         <item itemvalue="Application.RomanToInteger" />
         <item itemvalue="Application.GreatestEnglishLetter" />
         <item itemvalue="Application.ValidPalindrom" />
-        <item itemvalue="Application.FancyString" />
       </list>
     </recent_temporary>
   </component>
