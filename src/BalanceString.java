@@ -34,7 +34,7 @@ public class BalanceString {
         String s = "";
         int count = 0;
 
-        while (value != 0) {ß
+        while (value != 0) {
 
             for (char c : number.toCharArray()) {
                 s += c;
