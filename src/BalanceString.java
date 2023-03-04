@@ -26,6 +26,7 @@ return count;
 number=number.replaceAll(" ","");
 number=number.replaceAll("-","");
 
+
 int value=number.length()/3;
 
         String s="";
