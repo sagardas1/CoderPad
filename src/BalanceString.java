@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class BalanceString {
     public static int minimumDeletions(String s) {
 
@@ -21,7 +23,33 @@ public class BalanceString {
     }
 
     public static void main(String[] args) {
-        System.out.println(minimumDeletions("aababbab"));
+        String s[]={"hello","world","leetcode"};
+        System.out.println(countCharacters(s,"welldonehoneyr"));
+    }
+
+    public static int countCharacters(String[] words, String chars) {
+       Map<Character,Integer> map=new HashMap<>();
+
+       for(char c:chars.toCharArray()){
+           if(map.containsKey(c)){map.put(c,map.get(c)+1);}else{map.put(c,1);}
+       }
+       int sum=0;
+       for(String s:words){
+           Map<Character,Integer> map1=new HashMap<>();
+           for(char c:s.toCharArray()){
+               if(map1.containsKey(c)){map1.put(c,map1.get(c)+1);}else{map1.put(c,1);}
+           }
+       boolean flag =false;
+           for(Map.Entry<Character,Integer> en:map1.entrySet()){
+              if( map.containsKey(en.getKey()) && map.get(en.getKey())>=en.getValue()){}else{flag=true; break;}
+           }
+           if(!flag){
+               sum+=s.length();
+           }
+       }
+
+
+        return sum;
     }
 
     public static String reformatNumber(String number) {
