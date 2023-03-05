@@ -46,6 +46,7 @@ public class BalanceString {
            if(!flag){
                sum+=s.length();
            }
+
        }
 
 
