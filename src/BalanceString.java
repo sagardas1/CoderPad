@@ -59,8 +59,8 @@ public class BalanceString {
                 sum += s.length();
             }
 
-
         }
+
 
 
         return sum;
