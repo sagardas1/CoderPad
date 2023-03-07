@@ -13,6 +13,10 @@ public class BalanceString {
             flag = false;
             for (int j = i + 1; j < arr.length; j++) {
                 if (arr[i] == 'b' && arr[j] == 'a') {
+
+
+
+
                     flag = true;
                 }
             }
