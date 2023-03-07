@@ -5,6 +5,8 @@ public class BalanceString {
 
         char arr[] = s.toCharArray();
         int count = 0;
+
+
         boolean flag = false;
         if (s.replaceAll("a", "").length() == 0 || s.replaceAll("b", "").length() == 0) return 0;
         for (int i = 0; i < arr.length; i++) {
