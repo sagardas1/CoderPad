@@ -12,9 +12,9 @@ public class BalanceString {
         for (int i = 0; i < arr.length; i++) {
             flag = false;
             for (int j = i + 1; j < arr.length; j++) {
+
+
                 if (arr[i] == 'b' && arr[j] == 'a') {
-
-
 
 
                     flag = true;
@@ -65,17 +65,11 @@ public class BalanceString {
             }
 
 
-
             if (!flag) {
                 sum += s.length();
             }
 
         }
-
-
-
-
-
 
 
         return sum;
