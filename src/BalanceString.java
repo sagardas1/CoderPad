@@ -55,6 +55,9 @@ public class BalanceString {
                     break;
                 }
             }
+
+
+
             if (!flag) {
                 sum += s.length();
             }
