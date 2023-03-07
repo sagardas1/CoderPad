@@ -24,6 +24,8 @@ public class BalanceString {
 
     public static void main(String[] args) {
         String s[] = {"hello", "world", "leetcode"};
+
+
         System.out.println(countCharacters(s, "welldonehoneyr"));
     }
 
