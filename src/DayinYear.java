@@ -44,4 +44,30 @@ public class DayinYear {
     public static boolean isLeap(int year) {
         return (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0));
     }
+
+
+    public static boolean wordPattern(String pattern, String s) {
+
+        //pattern "hbvhdsvhb"
+        //s ="hvdhv hhsbdhbv jnjjs"
+        Map<String,Character> map1=new HashMap<>();
+        Map<Character,String> map2=new HashMap<>();
+        String ar[]=s.split(" ");
+        if(ar.length!=pattern.length()) return false;
+        for(int i=0;i<ar.length;i++){
+if(map1.containsKey(ar[i])&& map1.get(ar[i])!=pattern.charAt(i)) return false;
+            if(map2.containsKey(pattern.charAt(i))&&  !map2.get(pattern.charAt(i)).equals(ar[i])) return false;
+            map1.put(ar[i],pattern.charAt(i));
+            map2.put(pattern.charAt(i),ar[i]);
+        }
+
+        if(map1.size()!=map2.size()){return false;}
+
+
+        for(Map.Entry<String,Character> en:map1.entrySet()){
+            if(en.getKey().equals(map2.get(en.getValue()))){}else{return false;}
+        }
+        return true;
+
+    }
 }
