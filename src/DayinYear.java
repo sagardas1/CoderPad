@@ -45,7 +45,30 @@ public class DayinYear {
         return (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0));
     }
 
+    public static boolean isIsomorphic(String t, String s) {
 
+        //pattern "hbvhdsvhb"
+        //s ="hvdhv hhsbdhbv jnjjs"
+        Map<Character,Character> map1=new HashMap<>();
+        Map<Character,Character> map2=new HashMap<>();
+
+        if(s.length()!=t.length()) return false;
+        for(int i=0;i<s.length();i++){
+            if(map1.containsKey(s.charAt(i))&& map1.get(s.charAt(i))!=t.charAt(i)) return false;
+            if(map2.containsKey(t.charAt(i))&&  !map2.get(t.charAt(i)).equals(s.charAt(i))) return false;
+            map1.put(s.charAt(i),t.charAt(i));
+            map2.put(t.charAt(i),s.charAt(i));
+        }
+
+        if(map1.size()!=map2.size()){return false;}
+
+
+        for(Map.Entry<Character,Character> en:map1.entrySet()){
+            if(en.getKey().equals(map2.get(en.getValue()))){}else{return false;}
+        }
+        return true;
+
+    }
     public static boolean wordPattern(String pattern, String s) {
 
         //pattern "hbvhdsvhb"
