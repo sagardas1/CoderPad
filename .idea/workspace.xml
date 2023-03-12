@@ -35,9 +35,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.BalanceString">
+  <component name="RunManager" selected="Application.DayinYear">
     <configuration name="BalanceString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BalanceString" />
+      <module name="CoderPad" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DayinYear" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DayinYear" />
       <module name="CoderPad" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -64,20 +71,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidPalindrom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ValidPalindrom" />
-      <module name="CoderPad" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DayinYear" />
         <item itemvalue="Application.BalanceString" />
         <item itemvalue="Application.MaxLenSubArray" />
         <item itemvalue="Application.RomanToInteger" />
         <item itemvalue="Application.GreatestEnglishLetter" />
-        <item itemvalue="Application.ValidPalindrom" />
       </list>
     </recent_temporary>
   </component>
@@ -160,6 +160,21 @@
           <url>file://$PROJECT_DIR$/src/BalanceString.java</url>
           <line>47</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DayinYear.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DayinYear.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DayinYear.java</url>
+          <line>157</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/GreatestEnglishLetter.java</url>

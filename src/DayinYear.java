@@ -1,5 +1,11 @@
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.text.Format;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Calendar;
 
 public class DayinYear {
     public static int dayOfYear(String date) {
@@ -44,6 +50,45 @@ public class DayinYear {
     public static boolean isLeap(int year) {
         return (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0));
     }
+
+
+    public static boolean digitCount(String num) {
+        Map<String,Integer> map1=new HashMap<>();
+int val=0;
+        for(int i=0;i<num.length();i++){
+if(val<Integer.valueOf(num.charAt(i)+"")){
+    val=Integer.valueOf(num.charAt(i)+"");
+}
+           if(map1.containsKey(num.charAt(i)+"")){
+               map1.put(num.charAt(i)+"",map1.get(num.charAt(i)+"")+1);
+           }else{
+               map1.put(num.charAt(i)+"",1);
+           }
+        }
+        if(num.length()==1){
+            if(map1.containsKey(0+"")){
+                if(map1.get(0+"")==Integer.valueOf(num)){
+                    return true;
+                }
+                else return false;
+            }else return false;
+
+        }
+
+        for(int i=0;i<=val;i++){
+            if(map1.containsKey(i+"")) {
+                int k = map1.get(i + "");
+                int j = (int) Integer.valueOf(num.charAt(i) + "");
+                if (k != j) {
+                    return false;
+                }
+            }
+        }
+        return true;
+
+
+    }
+
 
     public static boolean isIsomorphic(String t, String s) {
 
@@ -93,4 +138,31 @@ if(map1.containsKey(ar[i])&& map1.get(ar[i])!=pattern.charAt(i)) return false;
         return true;
 
     }
+
+
+    public static void main(String args[]) throws Exception
+    {
+
+    }
+
+    public int sumBase(int n, int k) {
+        String l= Integer.toString(
+                Integer.parseInt(n+"", 10), k);
+        int j=0;
+        for(char c:l.toCharArray()){
+            j+=Integer.valueOf(c+"");
+        }
+        return j;
+    }
+    public static List<Boolean> prefixesDivBy5(int[] nums) {
+        List<Boolean> list=new ArrayList<>();
+        String k="";
+        for(int i:nums){
+            k+=i;
+            if(Integer.parseInt(k,2)%5==0){
+            list.add(true);}else list.add(false);
+        }
+        return list;
+        }
+
 }
