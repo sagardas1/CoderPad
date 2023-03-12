@@ -153,7 +153,7 @@ public class DayinYear {
     public static void main(String args[]) throws Exception {
 
     }
-ß
+
     public int sumBase(int n, int k) {
         String l = Integer.toString(
                 Integer.parseInt(n + "", 10), k);
