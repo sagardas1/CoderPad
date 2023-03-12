@@ -53,30 +53,29 @@ public class DayinYear {
 
 
     public static boolean digitCount(String num) {
-        Map<String,Integer> map1=new HashMap<>();
-int val=0;
-        for(int i=0;i<num.length();i++){
-if(val<Integer.valueOf(num.charAt(i)+"")){
-    val=Integer.valueOf(num.charAt(i)+"");
-}
-           if(map1.containsKey(num.charAt(i)+"")){
-               map1.put(num.charAt(i)+"",map1.get(num.charAt(i)+"")+1);
-           }else{
-               map1.put(num.charAt(i)+"",1);
-           }
+        Map<String, Integer> map1 = new HashMap<>();
+        int val = 0;
+        for (int i = 0; i < num.length(); i++) {
+            if (val < Integer.valueOf(num.charAt(i) + "")) {
+                val = Integer.valueOf(num.charAt(i) + "");
+            }
+            if (map1.containsKey(num.charAt(i) + "")) {
+                map1.put(num.charAt(i) + "", map1.get(num.charAt(i) + "") + 1);
+            } else {
+                map1.put(num.charAt(i) + "", 1);
+            }
         }
-        if(num.length()==1){
-            if(map1.containsKey(0+"")){
-                if(map1.get(0+"")==Integer.valueOf(num)){
+        if (num.length() == 1) {
+            if (map1.containsKey(0 + "")) {
+                if (map1.get(0 + "") == Integer.valueOf(num)) {
                     return true;
-                }
-                else return false;
-            }else return false;
+                } else return false;
+            } else return false;
 
         }
 
-        for(int i=0;i<=val;i++){
-            if(map1.containsKey(i+"")) {
+        for (int i = 0; i <= val; i++) {
+            if (map1.containsKey(i + "")) {
                 int k = map1.get(i + "");
                 int j = (int) Integer.valueOf(num.charAt(i) + "");
                 if (k != j) {
@@ -94,75 +93,87 @@ if(val<Integer.valueOf(num.charAt(i)+"")){
 
         //pattern "hbvhdsvhb"
         //s ="hvdhv hhsbdhbv jnjjs"
-        Map<Character,Character> map1=new HashMap<>();
-        Map<Character,Character> map2=new HashMap<>();
+        Map<Character, Character> map1 = new HashMap<>();
+        Map<Character, Character> map2 = new HashMap<>();
 
-        if(s.length()!=t.length()) return false;
-        for(int i=0;i<s.length();i++){
-            if(map1.containsKey(s.charAt(i))&& map1.get(s.charAt(i))!=t.charAt(i)) return false;
-            if(map2.containsKey(t.charAt(i))&&  !map2.get(t.charAt(i)).equals(s.charAt(i))) return false;
-            map1.put(s.charAt(i),t.charAt(i));
-            map2.put(t.charAt(i),s.charAt(i));
+        if (s.length() != t.length()) return false;
+        for (int i = 0; i < s.length(); i++) {
+            if (map1.containsKey(s.charAt(i)) && map1.get(s.charAt(i)) != t.charAt(i)) return false;
+            if (map2.containsKey(t.charAt(i)) && !map2.get(t.charAt(i)).equals(s.charAt(i))) return false;
+            map1.put(s.charAt(i), t.charAt(i));
+            map2.put(t.charAt(i), s.charAt(i));
         }
 
-        if(map1.size()!=map2.size()){return false;}
+        if (map1.size() != map2.size()) {
+            return false;
+        }
 
 
-        for(Map.Entry<Character,Character> en:map1.entrySet()){
-            if(en.getKey().equals(map2.get(en.getValue()))){}else{return false;}
+        for (Map.Entry<Character, Character> en : map1.entrySet()) {
+            if (en.getKey().equals(map2.get(en.getValue()))) {
+            } else {
+                return false;
+            }
         }
         return true;
 
     }
+
     public static boolean wordPattern(String pattern, String s) {
 
         //pattern "hbvhdsvhb"
         //s ="hvdhv hhsbdhbv jnjjs"
-        Map<String,Character> map1=new HashMap<>();
-        Map<Character,String> map2=new HashMap<>();
-        String ar[]=s.split(" ");
-        if(ar.length!=pattern.length()) return false;
-        for(int i=0;i<ar.length;i++){
-if(map1.containsKey(ar[i])&& map1.get(ar[i])!=pattern.charAt(i)) return false;
-            if(map2.containsKey(pattern.charAt(i))&&  !map2.get(pattern.charAt(i)).equals(ar[i])) return false;
-            map1.put(ar[i],pattern.charAt(i));
-            map2.put(pattern.charAt(i),ar[i]);
+        Map<String, Character> map1 = new HashMap<>();
+        Map<Character, String> map2 = new HashMap<>();
+        String ar[] = s.split(" ");
+        if (ar.length != pattern.length()) return false;
+        for (int i = 0; i < ar.length; i++) {
+            if (map1.containsKey(ar[i]) && map1.get(ar[i]) != pattern.charAt(i)) return false;
+            if (map2.containsKey(pattern.charAt(i)) && !map2.get(pattern.charAt(i)).equals(ar[i])) return false;
+            map1.put(ar[i], pattern.charAt(i));
+            map2.put(pattern.charAt(i), ar[i]);
         }
 
-        if(map1.size()!=map2.size()){return false;}
+        if (map1.size() != map2.size()) {
+            return false;
+        }
 
 
-        for(Map.Entry<String,Character> en:map1.entrySet()){
-            if(en.getKey().equals(map2.get(en.getValue()))){}else{return false;}
+        for (Map.Entry<String, Character> en : map1.entrySet()) {
+            if (en.getKey().equals(map2.get(en.getValue()))) {
+            } else {
+                return false;
+            }
         }
         return true;
 
     }
 
 
-    public static void main(String args[]) throws Exception
-    {
+    public static void main(String args[]) throws Exception {
 
     }
-
+ß
     public int sumBase(int n, int k) {
-        String l= Integer.toString(
-                Integer.parseInt(n+"", 10), k);
-        int j=0;
-        for(char c:l.toCharArray()){
-            j+=Integer.valueOf(c+"");
+        String l = Integer.toString(
+                Integer.parseInt(n + "", 10), k);
+        int j = 0;
+        for (char c : l.toCharArray()) {
+            j += Integer.valueOf(c + "");
         }
         return j;
     }
+
     public static List<Boolean> prefixesDivBy5(int[] nums) {
-        List<Boolean> list=new ArrayList<>();
-        String k="";
-        for(int i:nums){
-            k+=i;
-            if(Integer.parseInt(k,2)%5==0){
-            list.add(true);}else list.add(false);
+        List<Boolean> list = new ArrayList<>();
+        String k = "";
+        for (int i : nums) {
+            k += i;
+            if (Integer.parseInt(k, 2) % 5 == 0) {
+                list.add(true);
+            } else list.add(false);
         }
         return list;
-        }
+    }
 
 }
