@@ -155,6 +155,9 @@ public class DayinYear {
     }
 
 
+
+
+
     public int sumBase(int n, int k) {
         String l = Integer.toString(
                 Integer.parseInt(n + "", 10), k);
