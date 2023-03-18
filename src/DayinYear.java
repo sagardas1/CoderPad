@@ -1,3 +1,4 @@
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -151,14 +152,45 @@ public class DayinYear {
 
 
     public static void main(String args[]) throws Exception {
+        System.out.println(divide(-2147483648,-1));
+    }
+    public static int passThePillow(int n, int time) {
+        int j=1;
+        boolean flag=true;
 
+        while(time!=0){
+            if(flag) {
+                j += 1;
+            }else{
+                j-=1;
+            }
+
+            if(j==n){
+                flag=false;
+            }
+            if(j==0){
+                flag=true;
+            }
+
+            time-=1;
+        }
+        return j;
     }
 
 
 
 
+    public static  int divide(int dividend, int divisor) {
+        BigInteger bigInteger1=new BigInteger(String.valueOf(dividend));
+        BigInteger bigInteger2=new BigInteger(String.valueOf(divisor));
+        BigInteger l=bigInteger1.divide(bigInteger2);
+int k= (int) (Math.pow(2,31)-1);
+int y= (int) -(Math.pow(2,31));
+        if(l.longValue()>Math.pow(2,31)-1) return (int)Math.pow(2,31)-1;
+        else if(l.longValue()<-(Math.pow(2,31))) return (int)-(Math.pow(2,31));
+        else return l.intValue();
 
-
+    }
 
 
 
