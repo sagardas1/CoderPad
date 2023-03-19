@@ -152,7 +152,7 @@ public class DayinYear {
 
 
     public static void main(String args[]) throws Exception {
-        System.out.println(divide(-2147483648,-1));
+        System.out.println(pivotInteger(8));
     }
     public static int passThePillow(int n, int time) {
         int j=1;
@@ -178,7 +178,23 @@ public class DayinYear {
     }
 
 
+    public static int pivotInteger(int n) {
+        int k=0;
+        for(int i=0;i<=n;i++){
+            k+=i;
+        }
+        int j=0;
+        while(k!=0){
+            j+=n;
+            if(j==k){return n;}
+            k-=n;
 
+            n-=1;
+
+
+        }
+        return -1;
+    }
 
     public static  int divide(int dividend, int divisor) {
         BigInteger bigInteger1=new BigInteger(String.valueOf(dividend));
