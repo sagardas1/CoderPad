@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
 public class DayinYear {
     public static int dayOfYear(String date) {
         Map<Integer, Integer> map = new HashMap<>();
