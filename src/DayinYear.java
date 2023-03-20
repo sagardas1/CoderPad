@@ -154,46 +154,45 @@ public class DayinYear {
     public static void main(String args[]) throws Exception {
         System.out.println(pivotInteger(8));
     }
+
     public static int passThePillow(int n, int time) {
-        int j=1;
-        boolean flag=true;
+        int j = 1;
+        boolean flag = true;
 
-        while(time!=0){
-            if(flag) {
+        while (time != 0) {
+            if (flag) {
                 j += 1;
-            }else{
-                j-=1;
+            } else {
+                j -= 1;
             }
 
-            if(j==n){
-                flag=false;
+            if (j == n) {
+                flag = false;
             }
-            if(j==0){
-                flag=true;
+            if (j == 0) {
+                flag = true;
             }
 
-            time-=1;
+            time -= 1;
         }
         return j;
     }
 
 
     public static int pivotInteger(int n) {
-        int k=0;
-        for(int i=0;i<=n;i++){
-            k+=i;
+        int k = 0;
+        for (int i = 0; i <= n; i++) {
+            k += i;
         }
-        int j=0;
-        while(k!=0){
-            j+=n;
-            if(j==k){return n;}
-            k-=n;
+        int j = 0;
+        while (k != 0) {
+            j += n;
+            if (j == k) {
+                return n;
+            }
+            k -= n;
 
-            n-=1;
-
-
-
-
+            n -= 1;
 
 
         }
@@ -201,20 +200,17 @@ public class DayinYear {
     }
 
 
-    public static  int divide(int dividend, int divisor) {
-        BigInteger bigInteger1=new BigInteger(String.valueOf(dividend));
-        BigInteger bigInteger2=new BigInteger(String.valueOf(divisor));
-        BigInteger l=bigInteger1.divide(bigInteger2);
-int k= (int) (Math.pow(2,31)-1);
-int y= (int) -(Math.pow(2,31));
-        if(l.longValue()>Math.pow(2,31)-1) return (int)Math.pow(2,31)-1;
-        else if(l.longValue()<-(Math.pow(2,31))) return (int)-(Math.pow(2,31));
+    public static int divide(int dividend, int divisor) {
+        BigInteger bigInteger1 = new BigInteger(String.valueOf(dividend));
+        BigInteger bigInteger2 = new BigInteger(String.valueOf(divisor));
+        BigInteger l = bigInteger1.divide(bigInteger2);
+        int k = (int) (Math.pow(2, 31) - 1);
+        int y = (int) -(Math.pow(2, 31));
+        if (l.longValue() > Math.pow(2, 31) - 1) return (int) Math.pow(2, 31) - 1;
+        else if (l.longValue() < -(Math.pow(2, 31))) return (int) -(Math.pow(2, 31));
         else return l.intValue();
 
     }
-
-
-
 
 
     public int sumBase(int n, int k) {
