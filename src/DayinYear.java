@@ -8,6 +8,7 @@ public class DayinYear {
     public static int dayOfYear(String date) {
         Map<Integer, Integer> map = new HashMap<>();
 
+
         map.put(1, 31);
         map.put(2, 28);
         map.put(3, 31);
