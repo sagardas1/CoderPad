@@ -206,7 +206,6 @@ public class DayinYear {
         if (l.longValue() > Math.pow(2, 31) - 1) return (int) Math.pow(2, 31) - 1;
         else if (l.longValue() < -(Math.pow(2, 31))) return (int) -(Math.pow(2, 31));
         else return l.intValue();
-
     }
 
 
