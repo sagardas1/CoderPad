@@ -13,10 +13,8 @@ public class MorseCode {
         }
 
         for (String s : words) {
-            System.out.println("s-->>" + s);
             String ll = "";
             for (String kk : s.split("")) {
-                System.out.println("kk---->>" + kk);
 
                 ll += k[l.indexOf(kk)];
             }
