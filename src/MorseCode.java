@@ -13,20 +13,6 @@ public class MorseCode {
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         for (String s : words) {
             String ll = "";
             for (String kk : s.split("")) {
