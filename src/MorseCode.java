@@ -12,6 +12,9 @@ public class MorseCode {
             l += c + "";
         }
 
+
+
+
         for (String s : words) {
             String ll = "";
             for (String kk : s.split("")) {
