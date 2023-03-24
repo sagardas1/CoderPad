@@ -10,6 +10,9 @@ public class MorseCode {
 
 
 
+
+
+
         int i = 0;
         for (char c = 'a'; c <= 'z'; c++) {
             l += c + "";
