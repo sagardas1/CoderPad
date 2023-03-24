@@ -12,14 +12,7 @@ public class MorseCode {
             l += c + "";
 
 
-
-
-
-
         }
-
-
-
 
 
         for (String s : words) {
