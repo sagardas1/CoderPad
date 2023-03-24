@@ -8,11 +8,6 @@ public class MorseCode {
         String l = "";
 
 
-
-
-
-
-
         int i = 0;
         for (char c = 'a'; c <= 'z'; c++) {
             l += c + "";
