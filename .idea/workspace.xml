@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="711a3349-f56f-4cd5-8c0a-934cfe6db5b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CountPairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CountPairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CountPairs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
