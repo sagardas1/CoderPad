@@ -11,7 +11,11 @@ public class CountPairs {
         }
         if (count == 0) return 0;
         return count;
+
+
+
     }
+
 
 
     public static void main(String[] args) {
