@@ -40,6 +40,8 @@ public class TwoOutOfThree {
             if (count >= 2) {
                 finalCount.add(i);
             }
+
+
         }
         return finalCount;
     }
