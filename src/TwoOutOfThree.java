@@ -5,6 +5,7 @@ import java.util.stream.Collectors;
 
 public class TwoOutOfThree {
     public List<Integer> twoOutOfThree(int[] nums1, int[] nums2, int[] nums3) {
+
         List<Integer> l1 = Arrays.stream(nums1)
                 .boxed()
                 .collect(Collectors.toList());
