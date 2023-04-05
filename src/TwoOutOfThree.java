@@ -20,6 +20,7 @@ public class TwoOutOfThree {
         List<Integer> finalCount = new ArrayList<>();
         for (int i : nums1) {
             set.add(i);
+
         }
         for (int i : nums2) {
             set.add(i);
