@@ -17,6 +17,7 @@ public class TwoOutOfThree {
                 .collect(Collectors.toList());
 
         Set<Integer> set = new HashSet<>();
+
         List<Integer> finalCount = new ArrayList<>();
         for (int i : nums1) {
             set.add(i);
