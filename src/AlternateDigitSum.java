@@ -22,6 +22,7 @@ public class AlternateDigitSum {
 
 
 
+
     public static void main(String[] args) {
 Set<Integer> n=Set.of(2,4,6,8);
 n.stream().takeWhile(i->i%2==0).forEach(System.out::println);
